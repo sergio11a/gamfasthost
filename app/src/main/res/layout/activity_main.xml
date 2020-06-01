@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="50dp"
+        tools:context="com.google.firebase.quickstart.fcm.java.MainActivity">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/informationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/quickstart_message" />
+
+        <Button
+            android:id="@+id/presenzeButton"
+            android:layout_width="@dimen/standard_field_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white_text"
+            android:text="@string/presenze_in_azienda" />
+        <Button
+            android:id="@+id/subscribeButton"
+            android:layout_width="@dimen/standard_field_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white_text"
+            android:text="@string/subscribe_to_weather" />
+
+        <Button
+            android:id="@+id/logTokenButton"
+            android:layout_width="@dimen/standard_field_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white_text"
+            android:text="@string/log_token" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/profilo"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white_text"
+            android:text="Profilo"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white_text"
+            android:text="Uscita"
+            android:layout_marginLeft="4dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/utente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white_text"
+        android:layout_marginBottom="1px"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+ <TextView
+        android:id="@+id/utenteid"
+
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">gamfasthost</string>
+    <string name="quickstart_message">Lasciare questa app attiva in background per ricevere le notifiche di arrivo ospiti</string>
+    <string name="subscribe_to_weather">Registrazione al servizio</string>
+    <string name="log_token">Chiave nel server</string>
+    <string name="presenze_in_azienda">Presenze in azienda</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="false">GAMFast2</string>
+    <string name="msg_subscribe_failed">Sottoscrizione fallita</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="msg_subscribed">Dispositivo registrato</string>
+    <string name="msg_token_fmt" translatable="false">Chiave memorizzata nel server: %s</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in_short" translatable="false">Ricordami</string>
+    <string name="action_sign_in" translatable="false">Accedi</string>
+    <string name="prompt_email">Indirizzo email</string>
+    <string name="ricordami">Salva i miei dati</string>
+    <string name="si_trova_presso">Si trova presso:</string>
+    <string name="i_tuoi_dati">Profilo Utente</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="cellulare">Numero cellulare</string>
+    <string name="email">Indirizzo email</string>
+    <string name="conferma">Conferma</string>
+    <string name="cambio_password">Cambio password</string>
+    <string name="nuova_passord">Nuova passord</string>
+    <string name="ripeti_la_password">Ripeti la password</string>
+    <string name="password_dimenticata"><u>Password dimenticata</u></string>
+
+
+</resources>

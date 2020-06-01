@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Page2">
+
+    <TextView
+        android:id="@+id/budget_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Presenze in azienda"
+        android:textStyle = "bold"
+        android:gravity="center"
+        android:textColor="@color/white_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listPresenze"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@android:drawable/divider_horizontal_textfield"
+        app:layout_constraintTop_toBottomOf="@+id/budget_header"
+        app:layout_constraintBottom_toTopOf="@+id/footerRda"   />
+
+    <LinearLayout
+        android:id="@+id/footerRda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/utente"
+        tools:ignore="ExtraText">
+
+
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/back" />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/utente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white_text"
+        android:layout_marginBottom="1px"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
